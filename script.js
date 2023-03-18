@@ -18,13 +18,17 @@ function generateGrid(numOfDivs = 256, cssClass = 'medium-grid') {
       board.appendChild(myDivs[i]);
     }
 
-    myDivs.forEach(div =>div.addEventListener("mouseover", changeColor, false))
+    myDivs.forEach(div =>div.addEventListener("click", changeColor, false))
     
   }
 
 
 function changeColor (e) {
-    e.target.classList.add('colored');
+    if(e.target.classList.contains('colored')){
+        e.target.classList.remove('colored');
+    } else {
+        e.target.classList.add('colored');
+    }
     console.log(e)
 }
 

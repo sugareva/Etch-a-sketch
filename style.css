@@ -1,27 +1,38 @@
-.gridlayout {
-    display: grid;
-
-}
-
-.squarediv {
-    background-color: rgb(227, 227, 227) ;
-    border: 1px solid black;
-
-}
-
-.colored {
-    background-color: rgb(165, 165, 165);
+body {
+    background-color: rgb(228, 228, 225);
 }
 
 .section {
     display: flex;
     justify-content: center;
+    flex-grow: 2;
 }
 
-.bottom {
+.main-container {
     display: flex;
+    margin : 2%;
+    flex-wrap: wrap;
 }
 
+.options {
+    background-color: white;
+    flex-grow: 1;
+    padding : 2%;
+}
+.gridlayout {
+    display: grid;
+
+}
+.squarediv {
+    background-color: rgb(243, 243, 243) ;
+    border: 1px solid rgb(161, 161, 161);
+
+}
+
+.colored {
+    background-color: rgb(217, 217, 217);
+}
+/* GRID STYLING */
 .medium-grid {
     grid-template-rows: repeat(16, 2em);
     grid-template-columns: repeat(16, 2em);
