@@ -1,0 +1,41 @@
+.gridlayout {
+    display: grid;
+
+}
+
+.squarediv {
+    background-color: rgb(227, 227, 227) ;
+    border: 1px solid black;
+
+}
+
+.colored {
+    background-color: rgb(165, 165, 165);
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+}
+
+.medium-grid {
+    grid-template-rows: repeat(16, 2em);
+    grid-template-columns: repeat(16, 2em);
+
+}
+
+.small-grid {
+    grid-template-rows: repeat(8, 4em);
+    grid-template-columns: repeat(8, 4em);
+
+}
+
+.big-grid {
+    grid-template-rows: repeat(64, 0.5em);
+    grid-template-columns: repeat(64, 0.5em);
+
+}
