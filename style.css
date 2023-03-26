@@ -1,52 +1,82 @@
-body {
-    background-color: rgb(228, 228, 225);
-}
 
+
+body{
+    background-color: ghostwhite;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5% 10% 0 10%;
+}
 .section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    flex-grow: 2;
+    padding: 1% 3%;
 }
 
 .main-container {
     display: flex;
-    margin : 2%;
+    margin : 0% auto;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap : 1em;
+    height: 80vh;
+
 }
 
 .options {
+    text-align: center;
     background-color: white;
-    flex-grow: 1;
-    padding : 2%;
+    width : 400px;
+    height: 50%;
+    padding : 1%;
+    border-radius: 8px;
+    border: 2px solid black;
+
 }
 .gridlayout {
     display: grid;
+    min-width: 460px;
+    min-height: 460px;
 
 }
 .squarediv {
-    background-color: rgb(243, 243, 243) ;
-    border: 1px solid rgb(161, 161, 161);
+    background-color: rgba(243, 243, 243, 0) ;
+    border: .4px solid rgb(0, 0, 0);
 
 }
 
+button {
+    background-color: black;
+    border: none;
+    padding: .4em .8em;
+    color: white;
+    border-radius: 2px;
+    text-transform: uppercase;
+    
+    
+}
+
+button:hover {
+
+}
+
+
 .colored {
-    background-color: rgb(217, 217, 217);
+    background-color: black;
 }
 /* GRID STYLING */
 .medium-grid {
-    grid-template-rows: repeat(16, 2em);
-    grid-template-columns: repeat(16, 2em);
+    grid-template-columns: repeat(16, 1fr);
 
 }
 
 .small-grid {
-    grid-template-rows: repeat(8, 4em);
-    grid-template-columns: repeat(8, 4em);
+    grid-template-columns: repeat(8, 1fr);
 
 }
 
 .big-grid {
-    grid-template-rows: repeat(64, 0.5em);
-    grid-template-columns: repeat(64, 0.5em);
+    grid-template-columns: repeat(64, 1fr);
 
 }
